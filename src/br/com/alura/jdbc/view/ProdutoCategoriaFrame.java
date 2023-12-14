@@ -155,6 +155,7 @@ public class ProdutoCategoriaFrame extends JFrame {
 			String nome = (String) modelo.getValueAt(tabela.getSelectedRow(), 1);
 			String descricao = (String) modelo.getValueAt(tabela.getSelectedRow(), 2);
 			this.produtoController.alterar(nome, descricao, id);
+			JOptionPane.showMessageDialog(this, "Alterado com sucesso!");
 		} else {
 			JOptionPane.showMessageDialog(this, "Por favor, selecionar o ID");
 		}
